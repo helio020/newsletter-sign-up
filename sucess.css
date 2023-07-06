@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-message {
+    width: 375px;
+    padding: 30px 20px;
+}
+
+.content-message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.content-message > h1 {
+    font-size: 36px;
+    width: 300px;
+    color: hsl(234, 29%, 20%);
+}
+
+.content-message > p {
+    margin-top: 20px;
+    color: hsl(234, 29%, 20%);
+}
+
+p > span {
+    font-weight: 700;
+}
+
+#dismiss {
+    margin-top: 180px;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+}
+
+@media (min-width: 768px){
+    main {
+        background-color: hsl(235, 18%, 26%);
+    }
+
+    .container-message {
+        width: 450px;
+        height: 450px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 30px;
+        padding: 40px;
+    }
+
+    .content-message {
+        margin-top: 20px;
+    }
+
+    .content-message > h1 {
+        font-size: 40px;
+    }
+
+    #dismiss {
+        margin-top: 40px;
+    }
+
+    #dismiss:hover {
+        cursor: pointer;
+        background: linear-gradient(135deg, #FF527B, #FF6A3A);  
+    }
+}
