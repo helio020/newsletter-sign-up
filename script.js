@@ -1,5 +1,5 @@
 const email = document.getElementById('email')
-const button = document.getElementById('button')
+const submit = document.getElementById('submit')
 const invalid = document.getElementById('invalid')
 const empty = document.getElementById('empty')
 
@@ -26,7 +26,9 @@ email.addEventListener('invalid', () => {
 
 // The field is left empty and sucess message
 
-button.addEventListener('click', () => {
+submit.addEventListener('click', (e) => {
+    e.preventDefault()
+    
     if (!email.value){
         email.style.borderColor = 'hsl(4, 100%, 67%)'
         email.style.backgroundColor = 'hsla(4, 100%, 67%, 0.1)'

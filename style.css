@@ -90,7 +90,7 @@ form > label {
     color: hsl(231, 7%, 60%);
 }
 
-#button {
+#submit {
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     background-color: hsl(234, 29%, 20%);
@@ -150,7 +150,7 @@ form > label {
         margin-bottom: 30px;
     }
 
-    #button:hover {
+    #submit:hover {
         cursor: pointer;
         background: linear-gradient(135deg, #FF527B, #FF6A3A);  
     }
